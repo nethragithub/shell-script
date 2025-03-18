@@ -8,6 +8,7 @@ Y="\e[33m"
 N="\e[0m"
 USERID=$(id -u)
 echo "script running start at:: $TIMESTAMP"
+
 VALIDATE () {
     if [$1 -ne 0]
     then
@@ -17,12 +18,14 @@ VALIDATE () {
        echo -e "$2 is $G success $N"
     fi
 }    
+
 if [ $USERID -ne 0 ]
 then 
     echo "please run script with root access"
 else
     echo "you are root user"
 fi
+
 for i in $@
 do
     echo "package to install:: $i"
