@@ -9,7 +9,7 @@ N="\e[0m"
 echo "script starting at:: ${TIMESTAMP}"
 
 VALIDATE () {
-    if [$1 -ne 0]
+    if [ $1 -ne 0 ]
     then
         echo -e "installation of $2 is $R failed $N"
         exit 1
@@ -17,7 +17,7 @@ VALIDATE () {
         echo -e "installation of $2 is $G suceess $N"
     fi            
 }
-if [$USERID -ne 0]
+if [ $USERID -ne 0 ]
 then
     echo "run script with root access"
     exit 1
