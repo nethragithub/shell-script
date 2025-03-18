@@ -19,7 +19,7 @@ else
 fi
 
 dnf install mysql -y
-VALIDATE $? "installing mysql"
+VALIDATE $? "installing of mysql"
 
 dnf install nginx -y
-VALIDATE $? "installing nginx"          
+VALIDATE $? "installing of nginx"          
