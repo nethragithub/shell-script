@@ -7,6 +7,7 @@ then
 else 
     echo "you are root user"
 fi    
+
 dnf install mysql -y
 if [ $? -ne 0 ]
 then
@@ -15,11 +16,12 @@ then
 else 
     echo "sql installation success"
 fi
+
 dnf install git -y
 if [ $? -ne 0 ]
 then
     echo "git installation failed"
     exit 1
 else 
-    echo "git installation success
+    echo "git installation success"
 fi        
