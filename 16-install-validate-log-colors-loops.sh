@@ -17,7 +17,7 @@ VALIDATE () {
        echo -e "$2 is $G success $N"
     fi
 }    
-if [$USERID -ne 0]
+if [ $USERID -ne 0 ]
 then 
     echo "please run script with root access"
 else
@@ -27,7 +27,7 @@ for i in $@
 do
     echo "package to install:: $i"
     dnf list installed $i &>>$LOGFILE
-    if [$? -ne 0]
+    if [ $? -ne 0 ]
     then 
        echo "$i is installed ...skipping"
     else
