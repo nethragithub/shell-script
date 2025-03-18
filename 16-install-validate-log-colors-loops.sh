@@ -16,6 +16,7 @@ VALIDATE () {
     else
        echo -e "$2 is $G success $N"
     fi
+}    
 if [$USERID -ne 0]
 then 
     echo "please run script with root access"
