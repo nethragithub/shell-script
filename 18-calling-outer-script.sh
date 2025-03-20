@@ -12,3 +12,4 @@ do
        dnf install $i -y &>>LOGFILE
     #   VALIDATE $1 "installation of $i"
     fi    
+done    
