@@ -1,5 +1,5 @@
 #!/bin/bash
-source ./commom.sh
+source ./17-commom.sh
 check-root
 for i in $@
 do
