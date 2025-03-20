@@ -3,5 +3,5 @@ source ./17-commom.sh
 check_root
 for i in $@
 do
-  dnf install -y $i &>>$LOGFILE
+  dnf install $i -y &>>$LOGFILE
 done
