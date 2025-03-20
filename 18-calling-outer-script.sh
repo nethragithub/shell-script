@@ -1,6 +1,6 @@
 #!/bin/bash
 source ./17-commom.sh
-check-root
+check_root
 for i in $@
 do
     echo "package to install:: $i"
