@@ -13,4 +13,4 @@ do
   fi 
 done >> $DISK_USAGE   
 echo -e "message:$MESSAGE"
-echo "$MESSAGE" | snail -s "Disk usage alert" nethra.sangeetham@gmail.com
+echo "$MESSAGE" | s-nail -s "Disk usage alert" nethra.sangeetham@gmail.com
