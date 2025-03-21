@@ -1,6 +1,6 @@
 #!/bin/bash
-DISK_USAGE=$(df -hT | grep -i xfs)
-DISK_THRESHOLD=1
+DISK_USAGE=$(df -hT | grep xfs)
+DISK_THRESHOLD=50
 MESSAGE=" "
 
 while IFS=read -r line
@@ -11,6 +11,6 @@ do
   then
       MESSAGE+="$FOLDER is greather than $DISK_THRESHold, current_usage=$USAGED \n"
   fi 
-done >> $DISK_USAGE   
-echo -e "message:$MESSAGE"
+done <<< $DISK_USAGE   
+echo -e "message: $MESSAGE"
 echo "$MESSAGE" | s-nail -s "Disk usage alert" nethra.sangeetham@gmail.com
