@@ -10,7 +10,7 @@ then
 else
     echo "please make sure $source_directory exists"
 fi
-FILES=$(find $SOURCE_DIRECTORY -name "*.logs" -mtimes +14)
+FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtimes +14)
 
 while IFS= read -r line
 do 
