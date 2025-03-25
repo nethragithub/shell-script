@@ -7,5 +7,5 @@ echo "checking for the process that exceeds $THRESHOLD% cpu usage"
 ps -eo pid,ppid,cmd,%cpu --sort=-%cpu | awk "NR>1" "$4 > $THRESHOLD" print $0
 while read - r pid,ppid,cmd,cpu
 do
-  echo "alert:: process $pid $cmd is using $cpu% cpu!"
-  snail -s "cpu high usage alert" nethra.sangeetham@gmail.com << $alert
+  echo "Alert:: process $pid $cmd is using $cpu% cpu!"
+  snail -s "cpu high usage alert" nethra.sangeetham@gmail.com << '$Alert'
