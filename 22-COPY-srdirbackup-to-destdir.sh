@@ -7,6 +7,7 @@ source_dir=$1
 if [ ! -d $source_dir ]
 then
     echo "error: $source_diror not exist"
+    exit 1
 fi
 dest_dir=$2
 if [ ! -d $dest_dir ]
