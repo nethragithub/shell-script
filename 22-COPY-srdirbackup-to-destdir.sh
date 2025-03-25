@@ -6,7 +6,7 @@ fi
 source_dir=$1
 if [ ! -d $source_dir ]
 then
-    echo "error: $source_dir not exist"
+    mkdir -p $source_dir
     exit 1
 fi
 dest_dir=$2
