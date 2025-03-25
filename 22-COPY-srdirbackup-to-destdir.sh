@@ -3,7 +3,7 @@ if [ $# -ne 2 ]
 then 
     echo "usage: $0 source_dir dest_dir"
 fi
-source_dir=$(/tmp/log/data)
+source_dir=$(/tmp/doc/data)
 if [ ! -d $source_dir ]
 then
     echo "error: $source_diror not exist"
