@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ $# -ne 2 ]
 then 
-    echo "usage: $0 source_dir dest_dir"
+    echo "usage: $0 /tmp/doc/mydata /tmp/backup
 fi
 source_dir=$1
 if [ ! -d $source_dir ]
