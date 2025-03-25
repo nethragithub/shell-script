@@ -7,7 +7,6 @@ source_dir=$1
 if [ ! -d $source_dir ]
 then
     mkdir -p $source_dir
-    exit 1
 fi
 dest_dir=$2
 if [ ! -d $dest_dir ]
