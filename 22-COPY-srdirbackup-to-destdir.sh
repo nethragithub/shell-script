@@ -3,12 +3,12 @@ if [ $# -ne 2 ]
 then 
     echo "usage: $0 source_dir dest_dir"
 fi
-source_dir=$(/tmp/doc/mydata)
+source_dir=$1
 if [ ! -d $source_dir ]
 then
     echo "error: $source_diror not exist"
 fi
-dest_dir=$(/tmp/backup) 
+dest_dir=$2
 if [ ! -d $dest_dir ]
 then
     mkdir -p $dest_dir
