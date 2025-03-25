@@ -1,7 +1,7 @@
 #!/bin/bash
 THRESHOLD=85
 echo "top 5 cpu consuming process:"
-ps -eo pid,ppid,cmd,$cpu --sort=-%cpu | head -n 6
+ps -eo pid,ppid,cmd,%cpu --sort=-%cpu | head -n 6
 echo " "
 echo "checking for the process that exceeds $THRESHOLD% cpu usage"
 ps -eo pid,ppid,cmd,%cpu --sort=-%cpu | awk "NR>1" "if $4 > $THRESHOLD" print $0
